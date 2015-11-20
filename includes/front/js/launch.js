@@ -8,6 +8,12 @@ function arvlbarevicotest(){
 
 
 function arvlbpreprep(){
+        if (typeof lb_l_ret.delay === "string" && lb_l_ret.delay.match(/\s?-\s?/) != null) {
+            var range = lb_l_ret.delay.split(/\s?-\s?/);
+            lb_l_ret.delay = range[0];
+            if (typeof range[1] !== "undefined")
+                lb_l_ret.delay = Math.round((range[1] - range[0]) * Math.random()) + range[0] * 1;
+        }
   	window.setTimeout(arvlbshow_facebox, lb_l_ret.delay);
 }
 

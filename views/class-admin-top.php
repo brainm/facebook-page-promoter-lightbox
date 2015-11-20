@@ -87,7 +87,7 @@ class arvlbAdminTop extends arvlbAdminViewSimple{
     	Delay
 		</div>
 		<div class="col6 explain formselect">
-			Delay in ms for the lightbox to appear (e.g &gt; 4000)	<br />
+			Delay in ms for the lightbox to appear (e.g &gt; 4000 or 1000-5000 for random range)	<br />
 			<?php $this->getText('o[delay]'); ?>
 		</div>
 
